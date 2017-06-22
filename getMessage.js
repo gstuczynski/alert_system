@@ -48,7 +48,6 @@ function getMessage(auth, userId, messageId) {
                             if (header.name == "From") {
                                 result.push(header.value);
                             }
-
                             fs.appendFile("./resp2", util.inspect(response, false, null))
                         })
                         result.push(response.snippet)
